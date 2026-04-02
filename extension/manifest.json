@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Add to Workspace",
+  "version": "1.0",
+
+  "permissions": ["contextMenus", "scripting", "notifications"],
+
+  "host_permissions": ["http://127.0.0.1:5000/*","<all_urls>"],
+
+  "background": {
+    "service_worker": "background.js"
+  },
+
+  "action": {
+    "default_title": "Workspace"
+  }
+}
