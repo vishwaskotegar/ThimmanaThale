@@ -3,7 +3,7 @@
   "name": "Add to Workspace",
   "version": "1.0",
 
-  "permissions": ["contextMenus", "scripting", "notifications"],
+  "permissions": ["contextMenus", "scripting", "storage"],
 
   "host_permissions": ["http://127.0.0.1:5000/*","<all_urls>"],
 
@@ -12,6 +12,7 @@
   },
 
   "action": {
-    "default_title": "Workspace"
+    "default_title": "Workspace",
+    "default_popup": "popup.html"
   }
 }
