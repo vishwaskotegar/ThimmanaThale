@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    
+    body {
+      font-family: system-ui;
+      width: 320px;
+      margin: 0;
+      padding: 12px;
+      background: #1f1f1f;
+      color: white;
+    }
+
+    h3 {
+    position: sticky;
+    top: 0;
+    background: #1f1f1f;
+    padding-bottom: 6px;
+    }
+
+    .item {
+      padding: 10px;
+      border-radius: 6px;
+      margin-bottom: 8px;
+      font-size: 13px;
+    }
+
+    .success { background: #1b5e20; }
+    .error { background: #b71c1c; }
+
+    .url {
+      word-break: break-all;
+      opacity: 0.9;
+    }
+
+    .time {
+      font-size: 11px;
+      opacity: 0.6;
+      margin-top: 4px;
+    }
+
+    #list {
+    max-height: 300px;
+    overflow-y: auto;
+    padding-right: 4px;
+    }
+    #list::-webkit-scrollbar {
+    width: 6px;
+    }
+
+    #list::-webkit-scrollbar-thumb {
+    background: #555;
+    border-radius: 4px;
+    }
+
+    #list::-webkit-scrollbar-track {
+    background: transparent;
+    }
+  </style>
+</head>
+<body>
+  <h3>Recent Activity</h3>
+  <div id="list"></div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
